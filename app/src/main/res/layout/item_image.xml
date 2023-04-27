@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:padding="12dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="12dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="16dp"
+        tools:ignore="MissingConstraints">
 
     <ImageView
         android:id="@+id/iv_first"
@@ -27,4 +35,5 @@
         app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="@string/selected_bg" />
 
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
